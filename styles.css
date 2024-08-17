@@ -1,0 +1,157 @@
+/* General reset for the body */
+html, body {
+    min-width: 290px;
+    color: #0e0e0d;
+    background-color: #ffffff;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+#navbar {
+  width: 280px;
+  background-color: #333;
+  position: fixed; /* Keeps the navbar fixed on the left side */
+  top: 0;
+  left: 0;
+  height: 100%; /* Make the navbar fill the full height of the page */
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  z-index: 1000; /* Ensures the navbar is on top */
+}
+
+/* Header styling inside the navbar */
+#navbar header {
+  color: orangered;
+  font-size: 30px;
+  margin: 0; /* Remove default margin */
+  padding: 10px 16px; /* Add padding for spacing */
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+/* Unordered list styling */
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Make the list take up the full width of the navbar */
+  padding-top: 10px; /* Space between header and list items */
+}
+
+/* List item styling */
+#navbar ul li {
+  padding: 0;
+}
+
+/* Link styling inside the list */
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  text-align: left; /* Align text to the left */
+}
+
+#navbar ul li a:hover {
+  background-color: #575757;
+}
+
+/* Main content styling */
+#main-doc {
+  margin-left: 280px; /* Give space for the navbar */
+  padding: 20px;
+}
+
+/* Section header styling outside of the navbar */
+header {
+  color: orangered;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 20px;
+  border: 1px;
+}
+
+/* Code block styling */
+code {
+  display: block;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  margin-bottom: 20px;
+  overflow-x: auto; /* Add horizontal scroll if code is too long */
+}
+
+/* Additional code styling for a more IDE-like feel */
+code::before, code::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #444;
+}
+
+code::before {
+  margin-bottom: 10px;
+}
+
+code::after {
+  margin-top: 10px;
+}
+
+/* Optional: Styling for inline code */
+pre {
+  background-color: #282a36;
+  color: #f8f8f2;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  overflow-x: auto;
+}
+
+/* Inline code styling */
+pre code {
+  display: inline;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+/* Media Query for screens less than 768px wide */
+@media (max-width: 768px) {
+    /* Navbar styling for smaller screens */
+    #navbar {
+        width: 200px; /* Adjust width for smaller screens */
+        height: 100%; /* Maintain full height */
+        position: fixed; /* Keep it fixed to the left */
+        left: 0; /* Ensure it stays on the left edge */
+        top: 0;
+    }
+
+    /* Adjust main content margin to match the smaller navbar */
+    #main-doc {
+        margin-left: 200px; /* Match the width of the navbar */
+        padding-top: 20px; /* Add padding at the top */
+    }
+
+    /* Adjust header font size in navbar */
+    #navbar header {
+        font-size: 24px;
+        text-align: center; /* Center the header text */
+    }
+}
