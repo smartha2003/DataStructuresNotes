@@ -15,7 +15,6 @@ Welcome to the **Data Structures Overview** website! This site provides a quick 
   - Code examples in C++ and Python
 - **Linked Lists**
   - Singly Linked List
-  - Doubly Linked List
   - Code examples in C++ and Python
 - **Stacks**
   - Stack operations (Push, Pop, Peek)
